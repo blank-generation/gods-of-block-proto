@@ -8,6 +8,7 @@ export interface State {
   pages: Page[];
   posts: Post[];
   route?: Route;
+  homeLoaded: boolean;
 }
 
 // Initial State
@@ -15,6 +16,7 @@ export const appState = {
   perPage: 4,
   pages: [],
   posts: [],
+  homeLoaded: false,
 };
 
 export const mutations: MutationTree<State> = {

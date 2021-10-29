@@ -1,44 +1,122 @@
 <template>
   <section class="home">
-    <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-        <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
-
-        <div class="mb-12 xl:mb-0">
-          <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
-
-          <form
-            v-else
-            @submit.prevent="handleSubmit"
-            name="signups"
-            netlify
-            class="flex items-center border-b border-b-2 border-blue-400 py-2"
-          >
-            <input
-              ref="emailInput"
-              v-model="form.email"
-              class="appearance-none mb-36 bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-              type="text"
-              name="email"
-              placeholder="your@email.com"
-              aria-label="Email address"
-            />
-
-            <button
-              class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
-              type="submit"
-            >
-              Sign Up
-            </button>
-          </form>
-        </div>
+    <!-- <Landing></Landing> -->
+    <div
+      class="
+        py-10
+        md:py-0
+        mx-auto
+        flex flex-wrap flex-col
+        md:flex-row
+        items-center
+        align-middle
+        sec1
+      "
+    >
+      <div
+        class="
+          flex
+          lg:flex-row
+          flex-col
+          w-full
+          justify-center
+          lg:items-center
+          overflow-y-hidden
+          align-middle
+        "
+      >
+        <div class="lg:w-full"><img :src="welcomeImg" alt="" /></div>
+        <div v-html="$md.render(welcomeText)" class="home__welcome markdown lg:w-1/2 lg:pl-20" />
       </div>
-      <div class="flex flex-col w-full xl:w-2/5">
-        <img
-          alt="Hero"
-          class="rounded shadow-xl"
-          src="https://source.unsplash.com/random/720x400"
-        />
+    </div>
+    <!-- Section 2 -->
+    <div
+      class="
+        py-10
+        md:py-0
+        mx-auto
+        flex flex-wrap flex-col
+        md:flex-row
+        items-center
+        align-middle
+        sec2
+        sec
+      "
+    >
+      <div
+        class="
+          flex
+          lg:flex-row
+          flex-col
+          w-full
+          justify-center
+          lg:items-center
+          overflow-y-hidden
+          align-middle
+        "
+      >
+        <div class="lg:w-full"><img :src="img2" alt="" /></div>
+        <div v-html="$md.render(para2)" class="home__welcome markdown lg:w-1/2 lg:pl-20" />
+      </div>
+    </div>
+    <!-- Section 3 -->
+    <div
+      class="
+        py-10
+        md:py-0
+        mx-auto
+        flex flex-wrap flex-col
+        md:flex-row
+        items-center
+        align-middle
+        sec3
+        sec
+      "
+    >
+      <div
+        class="
+          flex
+          lg:flex-row
+          flex-col
+          w-full
+          justify-center
+          lg:items-center
+          overflow-y-hidden
+          align-middle
+        "
+      >
+        <div class="lg:w-full"><img :src="img3" alt="" /></div>
+        <div v-html="$md.render(para3)" class="home__welcome markdown lg:w-1/2 lg:pl-20" />
+      </div>
+    </div>
+    <!-- Section 4 -->
+    <div
+      class="
+        py-10
+        md:py-0
+        mx-auto
+        flex flex-wrap flex-col
+        md:flex-row
+        items-center
+        align-middle
+        sec4
+        sec
+      "
+    >
+      <div
+        class="
+          flex
+          lg:flex-row
+          flex-col
+          w-full
+          justify-center
+          lg:items-center
+          overflow-y-hidden
+          align-middle
+        "
+      >
+        <div class="lg:w-full"><img :src="img4" alt="" /></div>
+        <div v-html="$md.render(para4)" class="home__welcome markdown lg:w-1/2 lg:pl-20" />
       </div>
     </div>
   </section>
@@ -53,49 +131,165 @@ import settings from '@/content/settings/general.json';
   transition() {
     return 'slide-left';
   },
+  components: {
+    // Landing,
+  },
 })
 export default class Home extends Vue {
   welcomeText = settings.welcomeText;
 
-  get posts(): Post[] {
-    return this.$store.state.posts;
-  }
+  welcomeImg = settings.welcomeImage;
 
-  isSignedUp = false;
+  para2 = settings.para2;
 
-  form = {
-    email: '',
-  };
+  para3 = settings.para3;
 
-  encode(data): string {
-    return Object.keys(data)
-      .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-      .join('&');
-  }
+  para4 = settings.para4;
 
-  validEmail(email): boolean {
-    // eslint-disable-next-line
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-  }
+  img2 = settings.image2;
 
-  async handleSubmit(): Promise<void> {
-    if (!this.validEmail(this.form.email)) {
-      this.$refs.emailInput.focus();
-      return;
-    }
+  img3 = settings.image3;
 
-    try {
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({ 'form-name': 'signups', ...this.form }),
+  img4 = settings.image4;
+
+  $gsap;
+
+  animateOnScroll(): void {
+    this.$gsap.utils.toArray('.sec').forEach((element) => {
+      this.$gsap.from(element.querySelectorAll('img'), {
+        skewX: 1,
+        skewY: 1,
+        rotate: 4,
+        // y: -50,
+        y: -60,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: element.querySelectorAll('img'),
+          pin: true,
+          // markers: true,
+          // pinSpacing: false,
+          start: 'top top',
+          end: 'bottom center',
+          scrub: true,
+        },
       });
+      this.$gsap.fromTo(
+        element.querySelectorAll('p'),
+        {
+          ease: 'elastic.out(1,0.3)',
+          scale: 1,
+          skewY: 1,
+          autoAlpha: 0,
+        },
+        {
+          scale: 1.05,
+          skewY: -1,
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: element.querySelectorAll('p'),
+            duration: 2,
+            toggleActions: 'play play play play',
+            // pin: true,
+            start: 'top center',
+            end: 'bottom',
+            scrub: true,
+          },
+        }
+      );
+      this.$gsap.to(element.querySelectorAll('h2'), {
+        scale: 1.2,
+        skewY: -2,
+        opacity: 1,
+        x: -20,
+        // y: -30,
+        scrollTrigger: {
+          trigger: element.querySelectorAll('h2'),
+          // duration: 4,
+          // pin: true,
+          start: 'top center',
+          // end: 'bottom',
+          scrub: true,
+        },
+      });
+    });
+    this.$gsap.from('.sec1 img', {
+      // ease: 'Power1.easeOut',
+      // scale: 1.5,
+      skewX: 4,
+      skewY: 4,
+      x: -50,
+      rotation: -3,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: '.sec1',
+        // pin: true,
+        // markers: true,
+        // start: 'top top',
+        end: 'bottom',
+        scrub: true,
+      },
+    });
+    this.$gsap.fromTo(
+      '.sec1 p',
+      {
+        ease: 'elastic.out(1,0.3)',
+        scale: 1,
+        skewY: 0,
+        // autoAlpha: 0,
+      },
+      {
+        scale: 1.05,
+        skewY: -1,
+        // autoAlpha: 1,
+        scrollTrigger: {
+          trigger: '.sec1',
+          duration: 2,
+          toggleActions: 'play none play none',
+          // pin: true,
+          start: 'top center',
+          end: 'bottom',
+          scrub: true,
+        },
+      }
+    );
+    this.$gsap.fromTo(
+      '.sec1 h2',
+      {
+        ease: 'Power1.easeInOut',
+        scale: 1,
+        skewY: 0,
+        x: 0,
+        // opacity: 0,
+      },
+      {
+        scale: 1.2,
+        skewY: -1,
+        x: -10,
+        // opacity: 1,
+        // y: -30,
+        scrollTrigger: {
+          trigger: '.sec1',
+          // duration: 4,
+          // pin: true,
+          start: 'top center',
+          // end: 'bottom',
+          scrub: true,
+        },
+      }
+    );
+  }
 
-      this.isSignedUp = true;
-    } catch (error) {
-      console.error(error);
-    }
+  mounted(): void {
+    this.animateOnScroll();
   }
 }
 </script>
+
+<style>
+.sec2 div,
+.sec1 div,
+.sec3 div,
+.sec4 div {
+  overflow: hidden;
+}
+</style>

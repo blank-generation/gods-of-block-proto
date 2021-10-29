@@ -1,10 +1,18 @@
 {
   "title": "Home",
-  "titleTemplate": "| Bluise",
-  "welcomeText": "# Yo, I'm Bluise - A Nuxt.js & Netlify CMS boilerplate.\n\nAuthentic cred hoodie hashtag selfies. Raclette banjo cardigan cred. Kitsch XOXO lomo polaroid. Knausgaard put a bird on it four dollar toast leggings typewriter asymmetrical.",
-  "logo": "/images/uploads/logo.svg",
+  "titleTemplate": "| Gods of Block",
+  "welcomeText": "## THE INSPIRATION \r In ancient times both creative innovation and commerce grew around gods, housed in temples, which were the centres of artistic and financial activity.\r \r Legends and myths about Gods formed part of transparent public records maintained by communities that could be manipulated by no single individual or authority.And under such a system both art and commerce exploded and expanded ",
+  "logo": "/images/uploads/logo.png",
   "icon": "/images/uploads/logo.png",
   "loadingColor": "#0b3765",
   "seoDescription": "A quickstart for Nuxt & Netlify CMS",
-  "seoMetaImage": ""
+  "seoMetaImage": "",
+  "welcomeImage": "/images/uploads/landing.png",
+  "para2": " ## THE OBJECTIVE \r Thousands of years later shamans of the Metaverse have established media of communication and expression that takes artistic and commercial innovation to uncharted frontiers.\r \r Taking a leaf out of their book, Gods of Block seeks to create laboratories of artistic innovation within the Metaverse: an “Artverse” which will play a pivotal role in onboarding new artists into the Metaverse.",
+  "image2": "/images/uploads/img2.png",
+  "para3": "## THE PROMISE \r Additionally, we also equip collectors and investors with curatorial skills to create a radically initimate relationship between artists and collectors. Gods of Block seeks to build a decentralised and non-privatiseable platform for artistic revolution on the blockchain.\r \r Cryptoart has the potential to put power and freedom back into the hands of the community and the creators. But this won’t happen automatically",
+  "image3": "/images/uploads/img3.png",
+  "para4": "## THE CALL \r We need committed and inclusive communities that are constantly looking at new ways of making that vision a reality. This project is helmed by community artists who have formally studied the process of building such incluisve artistic communities. \r \r Collect Gods of Block genesis edition NFTs to become a driver of artistic revolution on the blockchain",
+  "image4": "/images/uploads/img4.png"
+
 }

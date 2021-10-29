@@ -1,4 +1,6 @@
 @import 'markdown';
+@import url('http://fonts.cdnfonts.com/css/copperplate');
+@import url('http://fonts.cdnfonts.com/css/century-gothic');
 
 body {
   @apply antialiased;
@@ -9,6 +11,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+h2{
+  font-family: 'Copperplate', sans-serif;
 }
 
 .page-enter-active,

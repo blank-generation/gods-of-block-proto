@@ -40,6 +40,12 @@ const nuxtConfig: Configuration = {
   },
 
   srcDir: 'app/',
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true
+    }
+  },
 
   /*
    ** Customize the progress-bar color
@@ -138,9 +144,11 @@ const nuxtConfig: Configuration = {
     ],
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
+    'nuxt-gsap-module',
   ],
 
   build: {
+    
     html: {
       minify: {
         removeOptionalTags: false,
@@ -161,7 +169,9 @@ const nuxtConfig: Configuration = {
     publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_nuxt/',
 
     devtools: process.env.NODE_ENV !== 'production',
-
+    transpile: [
+      "three"
+    ],
     optimization: {
       splitChunks: {
         name: true,

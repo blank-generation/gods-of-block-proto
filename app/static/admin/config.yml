@@ -23,6 +23,13 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: 'Title Template', name: titleTemplate, widget: string }
           - { label: 'Welcome Text', name: welcomeText, widget: markdown }
+          - { label: 'Welcome Image', name: welcomeImage, widget: image }
+          - { label: 'Paragraph 2', name: para2, widget: markdown }
+          - { label: 'Image 2', name: image2, widget: image }
+          - { label: 'Paragraph 3', name: para3, widget: markdown }
+          - { label: 'Image 3', name: image3, widget: image }
+          - { label: 'Paragraph 4', name: para4, widget: markdown }
+          - { label: 'Image 4', name: image4, widget: image } 
           - { label: Logo, name: logo, widget: image }
           - { label: Icon, name: icon, widget: image }
           - { label: 'Loading Color', name: loadingColor, widget: string, default: '#000000' }
