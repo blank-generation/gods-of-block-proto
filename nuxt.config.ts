@@ -148,7 +148,7 @@ const nuxtConfig: Configuration = {
   ],
 
   build: {
-    
+
     html: {
       minify: {
         removeOptionalTags: false,

@@ -1,7 +1,7 @@
 <template>
   <main :class="[$route.name]" class="main px-4 md:px-0">
     <div class="container mx-auto">
-      <site-header />
+      <site-header v-if="this.$router.currentRoute.path != '/'" />
       <nuxt class="nuxt" />
     </div>
     <site-footer class="my-20" />
@@ -19,10 +19,14 @@ import SiteFooter from '@/components/partials/footer.vue';
     SiteFooter,
   },
 })
-export default class DefaultLayout extends Vue {}
+export default class DefaultLayout extends Vue {
+  mounted(): void {
+    // console.log(this.$router.currentRoute.path);
+  }
+}
 </script>
 
-<style lang="scss">
+<style lang="css">
 .divider {
   position: relative;
   min-width: 100vw;
@@ -34,6 +38,6 @@ export default class DefaultLayout extends Vue {}
 }
 
 .main {
-  background: #1a1a1aff;
+  background: #000000;
 }
 </style>
