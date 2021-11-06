@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="landing">
     <div class="container mx-auto my-10 pb-6 flex justify-center flex-col">
       <div class="flex flex-row justify-around md:space-x-20 pt-5 linkCont">
         <!-- MOON -->
@@ -50,49 +50,76 @@
         <NuxtLink to="/world" class="landingLink">
           <div>
             <svg
-              version="1.1"
-              id="Layer_1"
+              id="b9857939-bd71-47d9-8467-193444a10550"
+              data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 125 125"
-              style="enable-background: new 0 0 125 125"
-              xml:space="preserve"
+              viewBox="0 0 118 124"
             >
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                  stroke: #fdb515;
-                  stroke-miterlimit: 10;
-                }
-                .st1 {
-                  fill: none;
-                  stroke: #ffffff;
-                  stroke-miterlimit: 10;
-                }
-              </style>
-              <g>
-                <circle class="st0" cx="62.67" cy="62.19" r="51.36" />
-                <g>
-                  <polyline class="st1" points="87.56,78.44 62.33,92.61 37.09,78.44 		" />
-                  <polyline class="st1" points="90.06,78.44 62.33,94.01 34.59,78.44 		" />
-                  <g>
-                    <polygon
-                      class="st1"
-                      points="90.06,45.75 62.33,61.33 34.59,45.75 62.33,28.66 			"
-                    />
-                    <polygon class="st1" points="87.56,45.75 62.33,59.92 37.09,45.75 62.33,30.2 			" />
-                    <path class="st1" d="M62.33,62.89" />
-                    <path class="st1" d="M62.33,61.35" />
-                    <line class="st1" x1="34.66" y1="45.75" x2="34.66" y2="78.74" />
-                    <line class="st1" x1="36.94" y1="45.83" x2="36.94" y2="78.82" />
-                    <line class="st1" x1="87.72" y1="45.75" x2="87.72" y2="78.74" />
-                    <line class="st1" x1="90" y1="45.83" x2="90" y2="78.82" />
-                    <line class="st1" x1="62.33" y1="59.89" x2="62.33" y2="93.95" />
-                    <line class="st1" x1="62.33" y1="60.47" x2="62.33" y2="62.7" />
-                  </g>
-                </g>
+              <circle
+                cx="58.67"
+                cy="62.19"
+                r="51.36"
+                style="fill: none; stroke: #fdb515; stroke-miterlimit: 10"
+              />
+              <g id="worldIcon">
+                <polyline
+                  points="83.56 78.44 58.33 92.61 33.09 78.44"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <polyline
+                  points="86.06 78.44 58.33 94.01 30.59 78.44"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <polygon
+                  points="86.06 45.75 58.33 61.33 30.59 45.75 58.33 28.66 86.06 45.75"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <polygon
+                  points="83.56 45.75 58.33 59.92 33.09 45.75 58.33 30.2 83.56 45.75"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <line
+                  x1="30.66"
+                  y1="45.75"
+                  x2="30.66"
+                  y2="78.74"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <line
+                  x1="32.94"
+                  y1="45.83"
+                  x2="32.94"
+                  y2="78.82"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <line
+                  x1="83.72"
+                  y1="45.75"
+                  x2="83.72"
+                  y2="78.74"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <line
+                  x1="86"
+                  y1="45.83"
+                  x2="86"
+                  y2="78.82"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <line
+                  x1="58.33"
+                  y1="59.89"
+                  x2="58.33"
+                  y2="93.95"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
+                <line
+                  x1="58.33"
+                  y1="60.47"
+                  x2="58.33"
+                  y2="62.7"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+                />
               </g>
             </svg>
           </div>
@@ -104,45 +131,36 @@
         <NuxtLink to="/site" class="landingLink">
           <div>
             <svg
-              version="1.1"
-              id="Layer_1"
+              id="ff3cb949-51f6-48e5-9b9d-702d6a9d8d0d"
+              data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 125 125"
-              style="enable-background: new 0 0 125 125"
-              xml:space="preserve"
+              viewBox="0 0 155 100"
             >
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                  stroke: #fdb515;
-                  stroke-miterlimit: 10;
-                }
-                .st1 {
-                  fill: none;
-                  stroke: #ffffff;
-                  stroke-miterlimit: 10;
-                }
-                .st2 {
-                  fill: #fdb515;
-                }
-              </style>
-              <rect x="15.67" y="15.2" class="st0" width="94" height="93.97" />
-              <g>
-                <rect x="38.4" y="37.93" class="st1" width="48.22" height="48.22" />
-
+              <rect
+                x="25"
+                y="-2"
+                width="110"
+                height="110"
+                style="fill: none; stroke: #fdb515; stroke-miterlimit: 10"
+              />
+              <g id="siteIcon">
                 <rect
-                  x="38.4"
-                  y="37.93"
-                  transform="matrix(0.7071 -0.7071 0.7071 0.7071 -25.5622 62.3679)"
-                  class="st1"
+                  x="57.4"
+                  y="25.93"
                   width="48.22"
                   height="48.22"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 10"
                 />
+                <rect
+                  x="57.4"
+                  y="25.93"
+                  width="48.22"
+                  height="48.22"
+                  transform="translate(-11.51 72.29) rotate(-45)"
+                  style="fill: none; stroke: #fff; stroke-miterlimit: 9.999903734042684"
+                />
+                <rect x="75.67" y="44.96" width="10.74" height="10.74" style="fill: #fdb515" />
               </g>
-              <rect x="56.67" y="56.96" class="st2" width="10.74" height="10.74" />
             </svg>
           </div>
           <div class="text-center underline">
@@ -826,7 +844,7 @@
           </g>
         </svg>
       </div>
-      <div class="text-center py-10 mx-auto w-3/4">
+      <div class="text-center py-10 mx-auto w-3/4 landingText">
         <p>
           A limited collection where the NFT is a membership and governance token to the Gods of
           Block Artverse, a play-to-earn project that gamifies the building of communities to
@@ -854,7 +872,18 @@ export default class Home extends Vue {
   $gsap;
 
   animateOnScroll(): void {
-    // this.$gsap.to('rect', 3, { rotation: '360', ease: 'Power0.easeNone', repeat: -1 });
+    this.$gsap.to('#worldIcon', 3, {
+      rotation: '360',
+      transformOrigin: '50% 50%',
+      ease: 'Power0.Linear',
+      repeat: -1,
+    });
+    this.$gsap.to('#siteIcon', 3, {
+      rotation: '-360',
+      transformOrigin: '50% 50%',
+      ease: 'Power0.Linear',
+      repeat: -1,
+    });
     // this.$gsap.to('circle', 3.2, { rotation: '360', ease: 'Power0.easeNone', repeat: -1 });
     // this.$gsap.to('polyline', 3.6, { rotation: '-360', ease: 'Power0.easeNone', repeat: -1 });
   }
@@ -884,9 +913,31 @@ export default class Home extends Vue {
   transition: 1s;
 }
 
-.landingImage svg {
+.landingImage {
+  position: relative;
+  top: -10vh;
+}
+.landingText {
+  position: relative;
+  top: -10vh;
 }
 .moon {
   max-width: 8%;
+}
+
+@media (max-width: 800px) {
+  .landingImage {
+    display: block;
+    top: 0px;
+  }
+  .landingText {
+    display: block;
+    top: 0px;
+  }
+
+  .landingLink svg {
+    width: 75px;
+    height: 75px;
+  }
 }
 </style>

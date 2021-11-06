@@ -188,7 +188,7 @@
                   <circle class="st4" cx="170.3" cy="166.2" r="3.8" />
                 </g>
               </g>
-              <g>
+              <g id="circ1">
                 <g>
                   <circle class="st2" cx="91.6" cy="401.2" r="85" />
                   <path class="st5" d="M176.5,400.3c0,46.9-38.1,85-85,85s-85-38.1-85-85" />
@@ -212,7 +212,7 @@
                   <path class="st10" d="M41.7,400.5c0-27.1,22-49.1,49.1-49.1s49.1,22,49.1,49.1" />
                 </g>
               </g>
-              <g>
+              <g id="circ2">
                 <g>
                   <circle class="st2" cx="344.4" cy="402.6" r="85" />
                   <path class="st5" d="M429.4,401.7c0,46.9-38.1,85-85,85s-85-38.1-85-85" />
@@ -236,7 +236,7 @@
                   <path class="st10" d="M393.6,401.4c0,27.1-22,49.1-49.1,49.1s-49.1-22-49.1-49.1" />
                 </g>
               </g>
-              <g>
+              <g id="circ3">
                 <g>
                   <circle class="st2" cx="601.8" cy="401.2" r="85" />
                   <path class="st5" d="M600.9,316.2c46.9,0,85,38.1,85,85s-38.1,85-85,85" />
@@ -2283,9 +2283,73 @@ export default class Site extends Vue {
   $gsap;
 
   animateOnScroll(): void {
-    // this.$gsap.scrollTrigger.defaults({
-    //   toggleActions: 'restart pause resume pause',
-    //   scroller: '#siteCont',
+    this.$gsap.to('#circ1', 3, {
+      rotation: '360',
+      transformOrigin: '50% 50%',
+      ease: 'Linear.easeNone',
+      repeat: -1,
+    });
+    this.$gsap.to('#circ2', 3, {
+      rotation: '-360',
+      transformOrigin: '50% 50%',
+      ease: 'Linear.easeNone',
+      repeat: -1,
+    });
+    this.$gsap.to('#circ3', 3, {
+      rotation: '360',
+      transformOrigin: '50% 50%',
+      ease: 'Linear.easeNone',
+      repeat: -1,
+    });
+    // Alot of hand god
+    this.$gsap.fromTo(
+      'circle.st5',
+      1,
+      {
+        fill: '#FFFFFF',
+        ease: 'Linear.easeNone',
+      },
+      {
+        fill: '#000000',
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 1,
+      }
+    );
+    this.$gsap.fromTo(
+      'path.st1',
+      1,
+      {
+        fill: '#000000',
+        ease: 'Linear.easeNone',
+      },
+      {
+        fill: '#FFFFFF',
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 1,
+      }
+    );
+    this.$gsap.fromTo(
+      'circle.st1',
+      3,
+      {
+        scale: 0.8,
+        transformOrigin: '50% 50%',
+        ease: 'Linear.easeNone',
+        repeat: -1,
+      },
+      {
+        scale: 1.1,
+        repeat: -1,
+        yoyo: true,
+      }
+    );
+    // this.$gsap.to('circle.st2', 3, {
+    //   rotation: '360',
+    //   transformOrigin: '50% 50%',
+    //   ease: 'Linear.easeNone',
+    //   repeat: -1,
     // });
   }
 
