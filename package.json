@@ -36,8 +36,7 @@
     "nuxt": "^2.13.3",
     "nuxt-property-decorator": "^2.7.2",
     "three": "^0.133.1",
-    "ts-node": "^8.10.2",
-    "vue-fullpage.js": "^0.1.7"
+    "ts-node": "^8.10.2"
   },
   "devDependencies": {
     "@babel/helper-call-delegate": "^7.10.4",

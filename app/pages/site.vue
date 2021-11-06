@@ -2311,7 +2311,8 @@ export default class Site extends Vue {
 }
 
 .sec svg {
-  max-width: 35vw;
+  /* max-width: 35vw; */
+  max-width: 60%;
 }
 
 @media (max-width: 800px) {
@@ -2321,7 +2322,8 @@ export default class Site extends Vue {
   }
 }
 .markdown {
-  text-align: justify;
+  /* text-align: justify; */
+  padding: 15px;
 }
 #siteCont {
   scroll-snap-type: y mandatory;

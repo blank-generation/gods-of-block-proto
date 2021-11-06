@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen" id="teamCont">
+  <div class="flex h-screen teamCont">
     <div class="m-auto">
       <img src="/images/uploads/Gods_of_Block_only_text.svg" alt="" />
       <h2 class="text-center">Coming soon</h2>
@@ -12,7 +12,7 @@ export default {};
 </script>
 
 <style>
-#teamCont {
+.teamCont {
   background-image: url('/images/uploads/coming_soon_bg-01.svg');
   background-size: cover;
   background-position-x: center;

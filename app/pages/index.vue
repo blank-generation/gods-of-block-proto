@@ -1,6 +1,198 @@
 <template>
   <section class="home">
     <div class="container mx-auto my-10 pb-6 flex justify-center flex-col">
+      <div class="flex flex-row justify-around md:space-x-20 pt-5 linkCont">
+        <!-- MOON -->
+
+        <!-- <svg
+          version="1.1"
+          id="moon"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 118 124"
+          style="enable-background: new 0 0 118 124"
+          xml:space="preserve"
+          class="moon"
+        >
+          <style type="text/css">
+            .st0 {
+              fill: none;
+              stroke: #fdb515;
+              stroke-miterlimit: 10;
+            }
+            .st1 {
+              fill: none;
+              stroke: #ffffff;
+              stroke-miterlimit: 10;
+            }
+          </style>
+          <g>
+            <path
+              class="st0"
+              d="M63.28,104.81c-24.09,0-43.62-19.53-43.62-43.62c0-7.31,1.8-14.19,4.97-20.24
+		C10.27,48.09,0.39,62.91,0.39,80.03c0,24.09,19.53,43.62,43.62,43.62c16.78,0,31.35-9.48,38.64-23.38
+		C76.82,103.17,70.24,104.81,63.28,104.81z"
+            />
+            <circle class="st1" cx="81.46" cy="36.22" r="23" />
+            <line class="st0" x1="81.46" y1="0.22" x2="81.46" y2="7.22" />
+            <line class="st0" x1="81.46" y1="65.22" x2="81.46" y2="72.22" />
+            <line class="st0" x1="45.46" y1="36.22" x2="52.46" y2="36.22" />
+            <line class="st0" x1="110.46" y1="36.22" x2="117.46" y2="36.22" />
+            <line class="st0" x1="56" y1="61.68" x2="60.95" y2="56.73" />
+            <line class="st0" x1="101.96" y1="15.72" x2="106.91" y2="10.77" />
+            <line class="st0" x1="106.91" y1="61.68" x2="101.96" y2="56.73" />
+            <line class="st0" x1="60.95" y1="15.72" x2="56" y2="10.77" />
+          </g>
+        </svg> -->
+
+        <NuxtLink to="/world" class="landingLink">
+          <div>
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 125 125"
+              style="enable-background: new 0 0 125 125"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: none;
+                  stroke: #fdb515;
+                  stroke-miterlimit: 10;
+                }
+                .st1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+              <g>
+                <circle class="st0" cx="62.67" cy="62.19" r="51.36" />
+                <g>
+                  <polyline class="st1" points="87.56,78.44 62.33,92.61 37.09,78.44 		" />
+                  <polyline class="st1" points="90.06,78.44 62.33,94.01 34.59,78.44 		" />
+                  <g>
+                    <polygon
+                      class="st1"
+                      points="90.06,45.75 62.33,61.33 34.59,45.75 62.33,28.66 			"
+                    />
+                    <polygon class="st1" points="87.56,45.75 62.33,59.92 37.09,45.75 62.33,30.2 			" />
+                    <path class="st1" d="M62.33,62.89" />
+                    <path class="st1" d="M62.33,61.35" />
+                    <line class="st1" x1="34.66" y1="45.75" x2="34.66" y2="78.74" />
+                    <line class="st1" x1="36.94" y1="45.83" x2="36.94" y2="78.82" />
+                    <line class="st1" x1="87.72" y1="45.75" x2="87.72" y2="78.74" />
+                    <line class="st1" x1="90" y1="45.83" x2="90" y2="78.82" />
+                    <line class="st1" x1="62.33" y1="59.89" x2="62.33" y2="93.95" />
+                    <line class="st1" x1="62.33" y1="60.47" x2="62.33" y2="62.7" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="text-center underline">
+            <span class="hidden md:inline"> GO TO </span> WORLD
+          </div>
+        </NuxtLink>
+
+        <NuxtLink to="/site" class="landingLink">
+          <div>
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 125 125"
+              style="enable-background: new 0 0 125 125"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: none;
+                  stroke: #fdb515;
+                  stroke-miterlimit: 10;
+                }
+                .st1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-miterlimit: 10;
+                }
+                .st2 {
+                  fill: #fdb515;
+                }
+              </style>
+              <rect x="15.67" y="15.2" class="st0" width="94" height="93.97" />
+              <g>
+                <rect x="38.4" y="37.93" class="st1" width="48.22" height="48.22" />
+
+                <rect
+                  x="38.4"
+                  y="37.93"
+                  transform="matrix(0.7071 -0.7071 0.7071 0.7071 -25.5622 62.3679)"
+                  class="st1"
+                  width="48.22"
+                  height="48.22"
+                />
+              </g>
+              <rect x="56.67" y="56.96" class="st2" width="10.74" height="10.74" />
+            </svg>
+          </div>
+          <div class="text-center underline">
+            <span class="hidden md:inline">GO TO </span> SITE
+          </div></NuxtLink
+        >
+
+        <!-- <svg
+          version="1.1"
+          id="moon"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 118 124"
+          style="enable-background: new 0 0 118 124"
+          xml:space="preserve"
+          class="moon"
+        >
+          <style type="text/css">
+            .st0 {
+              fill: none;
+              stroke: #fdb515;
+              stroke-miterlimit: 10;
+            }
+            .st1 {
+              fill: none;
+              stroke: #ffffff;
+              stroke-miterlimit: 10;
+            }
+          </style>
+          <g>
+            <path
+              class="st0"
+              d="M63.28,104.81c-24.09,0-43.62-19.53-43.62-43.62c0-7.31,1.8-14.19,4.97-20.24
+		C10.27,48.09,0.39,62.91,0.39,80.03c0,24.09,19.53,43.62,43.62,43.62c16.78,0,31.35-9.48,38.64-23.38
+		C76.82,103.17,70.24,104.81,63.28,104.81z"
+            />
+            <circle class="st1" cx="81.46" cy="36.22" r="23" />
+            <line class="st0" x1="81.46" y1="0.22" x2="81.46" y2="7.22" />
+            <line class="st0" x1="81.46" y1="65.22" x2="81.46" y2="72.22" />
+            <line class="st0" x1="45.46" y1="36.22" x2="52.46" y2="36.22" />
+            <line class="st0" x1="110.46" y1="36.22" x2="117.46" y2="36.22" />
+            <line class="st0" x1="56" y1="61.68" x2="60.95" y2="56.73" />
+            <line class="st0" x1="101.96" y1="15.72" x2="106.91" y2="10.77" />
+            <line class="st0" x1="106.91" y1="61.68" x2="101.96" y2="56.73" />
+            <line class="st0" x1="60.95" y1="15.72" x2="56" y2="10.77" />
+          </g>
+        </svg> -->
+      </div>
       <div class="w-full landingImage">
         <svg
           class="md:block hidden"
@@ -634,194 +826,6 @@
           </g>
         </svg>
       </div>
-      <div class="flex flex-row justify-center md:space-x-20 pt-5">
-        <!-- MOON -->
-
-        <svg
-          version="1.1"
-          id="moon"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 118 124"
-          style="enable-background: new 0 0 118 124"
-          xml:space="preserve"
-          class="moon"
-        >
-          <style type="text/css">
-            .st0 {
-              fill: none;
-              stroke: #fdb515;
-              stroke-miterlimit: 10;
-            }
-            .st1 {
-              fill: none;
-              stroke: #ffffff;
-              stroke-miterlimit: 10;
-            }
-          </style>
-          <g>
-            <path
-              class="st0"
-              d="M63.28,104.81c-24.09,0-43.62-19.53-43.62-43.62c0-7.31,1.8-14.19,4.97-20.24
-		C10.27,48.09,0.39,62.91,0.39,80.03c0,24.09,19.53,43.62,43.62,43.62c16.78,0,31.35-9.48,38.64-23.38
-		C76.82,103.17,70.24,104.81,63.28,104.81z"
-            />
-            <circle class="st1" cx="81.46" cy="36.22" r="23" />
-            <line class="st0" x1="81.46" y1="0.22" x2="81.46" y2="7.22" />
-            <line class="st0" x1="81.46" y1="65.22" x2="81.46" y2="72.22" />
-            <line class="st0" x1="45.46" y1="36.22" x2="52.46" y2="36.22" />
-            <line class="st0" x1="110.46" y1="36.22" x2="117.46" y2="36.22" />
-            <line class="st0" x1="56" y1="61.68" x2="60.95" y2="56.73" />
-            <line class="st0" x1="101.96" y1="15.72" x2="106.91" y2="10.77" />
-            <line class="st0" x1="106.91" y1="61.68" x2="101.96" y2="56.73" />
-            <line class="st0" x1="60.95" y1="15.72" x2="56" y2="10.77" />
-          </g>
-        </svg>
-
-        <a href="/world" class="landingLink">
-          <div>
-            <svg
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 125 125"
-              style="enable-background: new 0 0 125 125"
-              xml:space="preserve"
-            >
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                  stroke: #fdb515;
-                  stroke-miterlimit: 10;
-                }
-                .st1 {
-                  fill: none;
-                  stroke: #ffffff;
-                  stroke-miterlimit: 10;
-                }
-              </style>
-              <g>
-                <circle class="st0" cx="62.67" cy="62.19" r="51.36" />
-                <g>
-                  <polyline class="st1" points="87.56,78.44 62.33,92.61 37.09,78.44 		" />
-                  <polyline class="st1" points="90.06,78.44 62.33,94.01 34.59,78.44 		" />
-                  <g>
-                    <polygon
-                      class="st1"
-                      points="90.06,45.75 62.33,61.33 34.59,45.75 62.33,28.66 			"
-                    />
-                    <polygon class="st1" points="87.56,45.75 62.33,59.92 37.09,45.75 62.33,30.2 			" />
-                    <path class="st1" d="M62.33,62.89" />
-                    <path class="st1" d="M62.33,61.35" />
-                    <line class="st1" x1="34.66" y1="45.75" x2="34.66" y2="78.74" />
-                    <line class="st1" x1="36.94" y1="45.83" x2="36.94" y2="78.82" />
-                    <line class="st1" x1="87.72" y1="45.75" x2="87.72" y2="78.74" />
-                    <line class="st1" x1="90" y1="45.83" x2="90" y2="78.82" />
-                    <line class="st1" x1="62.33" y1="59.89" x2="62.33" y2="93.95" />
-                    <line class="st1" x1="62.33" y1="60.47" x2="62.33" y2="62.7" />
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </div>
-          <div class="text-center"><span class="hidden md:inline"> GO TO </span> WORLD</div>
-        </a>
-
-        <NuxtLink to="/site" class="landingLink">
-          <div>
-            <svg
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 125 125"
-              style="enable-background: new 0 0 125 125"
-              xml:space="preserve"
-            >
-              <style type="text/css">
-                .st0 {
-                  fill: none;
-                  stroke: #fdb515;
-                  stroke-miterlimit: 10;
-                }
-                .st1 {
-                  fill: none;
-                  stroke: #ffffff;
-                  stroke-miterlimit: 10;
-                }
-                .st2 {
-                  fill: #fdb515;
-                }
-              </style>
-              <rect x="15.67" y="15.2" class="st0" width="94" height="93.97" />
-              <g>
-                <rect x="38.4" y="37.93" class="st1" width="48.22" height="48.22" />
-
-                <rect
-                  x="38.4"
-                  y="37.93"
-                  transform="matrix(0.7071 -0.7071 0.7071 0.7071 -25.5622 62.3679)"
-                  class="st1"
-                  width="48.22"
-                  height="48.22"
-                />
-              </g>
-              <rect x="56.67" y="56.96" class="st2" width="10.74" height="10.74" />
-            </svg>
-          </div>
-          <div class="text-center"><span class="hidden md:inline">GO TO </span> SITE</div></NuxtLink
-        >
-
-        <svg
-          version="1.1"
-          id="moon"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 118 124"
-          style="enable-background: new 0 0 118 124"
-          xml:space="preserve"
-          class="moon"
-        >
-          <style type="text/css">
-            .st0 {
-              fill: none;
-              stroke: #fdb515;
-              stroke-miterlimit: 10;
-            }
-            .st1 {
-              fill: none;
-              stroke: #ffffff;
-              stroke-miterlimit: 10;
-            }
-          </style>
-          <g>
-            <path
-              class="st0"
-              d="M63.28,104.81c-24.09,0-43.62-19.53-43.62-43.62c0-7.31,1.8-14.19,4.97-20.24
-		C10.27,48.09,0.39,62.91,0.39,80.03c0,24.09,19.53,43.62,43.62,43.62c16.78,0,31.35-9.48,38.64-23.38
-		C76.82,103.17,70.24,104.81,63.28,104.81z"
-            />
-            <circle class="st1" cx="81.46" cy="36.22" r="23" />
-            <line class="st0" x1="81.46" y1="0.22" x2="81.46" y2="7.22" />
-            <line class="st0" x1="81.46" y1="65.22" x2="81.46" y2="72.22" />
-            <line class="st0" x1="45.46" y1="36.22" x2="52.46" y2="36.22" />
-            <line class="st0" x1="110.46" y1="36.22" x2="117.46" y2="36.22" />
-            <line class="st0" x1="56" y1="61.68" x2="60.95" y2="56.73" />
-            <line class="st0" x1="101.96" y1="15.72" x2="106.91" y2="10.77" />
-            <line class="st0" x1="106.91" y1="61.68" x2="101.96" y2="56.73" />
-            <line class="st0" x1="60.95" y1="15.72" x2="56" y2="10.77" />
-          </g>
-        </svg>
-      </div>
       <div class="text-center py-10 mx-auto w-3/4">
         <p>
           A limited collection where the NFT is a membership and governance token to the Gods of
@@ -870,6 +874,14 @@ export default class Home extends Vue {
   width: 125px;
   height: 125px;
   /* height: 125px; */
+  transition: 0.5s;
+}
+
+.landingLink:hover svg {
+  width: 150px;
+  height: 150px;
+  transform: rotate(90deg);
+  transition: 1s;
 }
 
 .landingImage svg {

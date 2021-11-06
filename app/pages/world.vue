@@ -1,12 +1,18 @@
 <template>
-  <div class="container my-10 pb-6 mx-0 flex justify-center flex-col">
+  <!-- <div class="container my-10 pb-6 mx-0 flex justify-center flex-col">
     <Landing />
+  </div> -->
+  <div class="flex h-screen teamCont">
+    <div class="m-auto">
+      <img src="/images/uploads/Gods_of_Block_only_text.svg" alt="" />
+      <h2 class="text-center">Coming soon</h2>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
-import Landing from '@/components/landing.vue';
+// import Landing from '@/components/landing.vue';
 // import settings from '@/content/settings/general.json';
 
 @Component({
@@ -15,7 +21,7 @@ import Landing from '@/components/landing.vue';
     return 'slide-left';
   },
   components: {
-    Landing,
+    // Landing,
   },
 })
 export default class Home extends Vue {
