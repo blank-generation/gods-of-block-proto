@@ -5,7 +5,7 @@
   <div class="flex h-screen teamCont">
     <div class="m-auto">
       <img src="/images/uploads/Gods_of_Block_only_text.svg" alt="" />
-      <h2 class="text-center">Coming soon</h2>
+      <h2 class="text-center">COMING SOON</h2>
     </div>
   </div>
 </template>

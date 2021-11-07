@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center">Roadmap</h1>
+    <h2 class="text-center title">Roadmap</h2>
 
     <div class="timlineCont">
       <div class="timeline-block timeline-block-right">

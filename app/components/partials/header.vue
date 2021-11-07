@@ -85,7 +85,7 @@
           ></a>
         </li>
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4" id="twitterBtn">
-          <a href="/twitter"
+          <a href="https://twitter.com/godsofblock"
             ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
               <g style="isolation: isolate">
                 <g id="b7942413-219f-469b-89ee-4d4b28af2835" data-name="Layer 1">
@@ -107,7 +107,7 @@
     </nav>
 
     <!-- eslint-disable-next-line vue-a11y/click-events-have-key-events -->
-    <button class="fixed bottom-0" @click="scrollo">TOP</button>
+    <!-- <button class="fixed bottom-0" @click="scrollo">TOP</button> -->
   </header>
 </template>
 

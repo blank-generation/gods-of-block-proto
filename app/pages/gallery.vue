@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-x-5 flex-wrap gap-y-5">
+  <div class="flex gap-x-5 flex-wrap gap-y-5 justify-center">
     <CoolLightBox :items="items" :index="index" @close="index = null" :effect="'fade'">
     </CoolLightBox>
 

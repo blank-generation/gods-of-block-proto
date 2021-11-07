@@ -897,6 +897,7 @@ export default class Home extends Vue {
 <style>
 .landingLink {
   font-family: 'Copperplate', sans-serif;
+  z-index: 10000;
   /* text-decoration: underline; */
 }
 .landingLink svg {
