@@ -57,7 +57,7 @@ export default class Landing extends Vue {
     this.bgcam = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
     this.renderer = new THREE.WebGLRenderer();
-    this.renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.9);
+    this.renderer.setSize(window.innerWidth * 0.9, window.innerHeight * 0.9);
     this.renderer.antialias = true;
     // const canvas = this.renderer.domElement;
     // const width = canvas.clientWidth;

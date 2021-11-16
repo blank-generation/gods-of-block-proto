@@ -332,6 +332,8 @@
               viewBox="0 0 694.1 768"
               style="enable-background: new 0 0 694.1 768"
               xml:space="preserve"
+              width="100%"
+              height="100%"
             >
               <style type="text/css">
                 .st0 {
@@ -690,6 +692,8 @@
               viewBox="0 0 1012.9 768"
               style="enable-background: new 0 0 1012.9 768"
               xml:space="preserve"
+              width="100%"
+              height="100%"
             >
               <style type="text/css">
                 .st0 {
@@ -1386,6 +1390,8 @@
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 400 400"
+              width="100%"
+              height="100%"
             >
               <path
                 d="M156.64,147.93a45.67,45.67,0,1,1,91.34,0"
@@ -2384,7 +2390,7 @@ export default class Site extends Vue {
   .sec svg {
     max-height: 300px;
     max-width: 100%;
-    width: auto;
+    /* width: auto; */
   }
 }
 .markdown {
