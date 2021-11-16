@@ -57,8 +57,8 @@ export default class Home extends Vue {
 
 .comingSoon {
   opacity: 0.9;
+  left: 40%;
   top: 50%;
-  left: 45%;
 }
 /* .bgimg {
   position: absolute;
