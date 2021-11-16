@@ -6,13 +6,20 @@
       <div class="timeline-block timeline-block-right">
         <div class="marker"></div>
         <div class="timeline-content">
-          <h2>25% GENESIS COLLECTION</h2>
-          <img src="/images/uploads/25p-01.svg" alt="" class="svg-img" />
-          <p>
-            The Block God Generator is released and will enable the community to create their own
-            Gods. The Gods created will be voted on by the community and minted. The creator gets
-            50% of the proceeds when their God is minted and sold.
-          </p>
+          <div>
+            <h2>25% GENESIS COLLECTION</h2>
+            <img src="/images/uploads/25p-01.svg" alt="" class="svg-img" />
+          </div>
+          <div>
+            <p>
+              Launch of the first community led GOB initiative: The Cryptionary Project. The
+              crowd-sourced cryptionary project ensures that new artists have a guiding tool that
+              helps them make sense of the “meta-vernacular” which is slowly evolving into a dialect
+              or even a language of its own. By sourcing important etymological and epistemological
+              information about these words we enable academic research into the linguistics of the
+              “meta-vernacular”
+            </p>
+          </div>
         </div>
       </div>
 
@@ -20,12 +27,12 @@
         <div class="marker"></div>
         <div class="timeline-content">
           <h2>50% GENESIS COLLECTION</h2>
-          <img src="/images/uploads/50PERC2-01.svg" alt="" class="svg-img" />
+          <img src="/images/uploads/50perc-01.png" alt="" class="svg-img pt-10" />
           <p>
-            Voting on artists for the community who will design specific features of the Artverse
-            will begin 100% Genesis Collection Sale - The building of the Artverse will begin. We
-            will start with intimate conversations between designers/artists and the community. The
-            community will play a continuous guiding role in the building of the Artverse.
+            Launch of community voting systems. Community voting systems are an exercise in meta
+            democracy. The community will vote on what kind of voting systems work best for various
+            important decision making processes. Voting on how to vote?! That’s some truly meta
+            shit.
           </p>
         </div>
       </div>
@@ -34,15 +41,18 @@
         <div class="marker"></div>
         <div class="timeline-content">
           <h2>100% GENESIS COLLECTION</h2>
-          <img src="/images/uploads/100PERC-01.svg" alt="" class="svg-img" />
+          <img src="/images/uploads/100PERC-01.svg" alt="" class="svg-img pt-10" />
           <p>
-            The building of the Artverse will begin. We will start with intimate conversations
-            between designers/artists and the community. The community will play a continuous
-            guiding role in the building of the Artverse.
+            Launch of Metawearz: Fashion in the metaverse. Community will vote on various
+            merchandise options both in terms of sales and distribution as well as design and
+            fashion quotient. The merchandise seeks to bridge the fashion gap between IRL fashion
+            and fashion in the metaverse with collections that are simultaneously available IRL and
+            also in decentraland, cryptovoxels, sandbox and other select games.
           </p>
         </div>
       </div>
     </div>
+    <img src="/images/uploads/phase-01.svg" class="phaseImg" alt="" />
     <div
       class="
         flex
@@ -65,7 +75,7 @@
       <div class="md:w-1/3">
         <h2>PHASE TWO Q3 (2023)</h2>
         <p>
-          Communities will be able to build their own settlements and civilisations on the terrain
+          The community will be able to build their own settlements and civilisations on the terrain
           by playing the Gods of Block Tactical Role Playing Game (TRPG).
         </p>
       </div>
@@ -122,11 +132,18 @@
   float: left;
   direction: rtl;
 }
+.timeline-block-left p {
+  direction: ltr;
+}
+.timeline-block-left h2 {
+  direction: ltr;
+  text-align: right;
+}
 
 .marker {
   width: 16px;
   height: 16px;
-  transform: scale(4);
+  transform: scale(6);
   background: url('/images/uploads/roadmap_bllock-01.svg');
   margin-top: 10px;
   z-index: 9999;
@@ -138,10 +155,36 @@
   /* color: #666; */
 }
 
+.phaseImg {
+  max-width: 800px;
+  @apply mx-auto pb-10;
+}
+/* .timeline-content {
+  display: flex;
+  flex-direction: row-reverse;
+} */
+.timeline-content {
+  /* @apply w-1/2 mx-auto; */
+}
 @media screen and (max-width: 768px) {
   .timlineCont:before {
-    left: 8px;
+    left: 12px;
     width: 2px;
+  }
+  .timlineCont {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .marker {
+    /* width: 8px;
+    height: 8px;
+    transform: scale(6); */
+    transform: scale(3.5);
+    position: relative;
+    left: 4px;
   }
   .timeline-block {
     width: 100%;
@@ -154,6 +197,15 @@
   .timeline-block-left {
     float: none;
     direction: ltr;
+  }
+
+  .timeline-block-left h2 {
+    direction: ltr;
+    /* text-align: left; */
+  }
+
+  .timeline-block h2 {
+    text-align: center;
   }
 }
 </style>

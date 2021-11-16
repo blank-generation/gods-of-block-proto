@@ -1,9 +1,8 @@
 <template>
   <div class="flex md:flex-row flex-col gap-x-10">
-    <div class="md:w-1/2 mx-auto md:mx-0">
-      <h1 class="text-center title">TEAM</h1>
-      <img src="/images/uploads/teamill-01.svg" alt="" />
-      <p>
+    <div class="md:w-2/3 mx-auto md:mx-0 md:flex-col flex-col-reverse flex">
+      <!-- <h1 class="text-center title">TEAM</h1> -->
+      <p class="md:px-16 px-2 md:pt-10 md:pb-0 pb-10 text-center">
         Indian political cartoonist Psycopomp has been involved in building art communities in
         various Indian cities for over a decade. Through a Fulbright Scholarship to study community
         art, Psycopomp was able to formulate these ideas and experiences to create a proposal for
@@ -11,6 +10,7 @@
         thinkers, shamans and sorcerers of the cryptoverse. Before long it took shape as the project
         we now present to you as Gods of Block (GOB).
       </p>
+      <img src="/images/uploads/teamill-01.svg" alt="" />
     </div>
     <div class="flex flex-col">
       <!-- Satiwik -->
@@ -50,7 +50,7 @@
         <img src="/images/uploads/vijay-01.svg" alt="" />
         <div class="my-auto">
           <h2>BUZZEDART</h2>
-          <p>SCRIBE, SHILLER-IN-CHIEF</p>
+          <p>SCRIBE, <br />SHILLER-IN-CHIEF</p>
         </div>
       </div>
     </div>
@@ -62,16 +62,8 @@ export default {};
 </script>
 
 <style>
-.teamCont {
-  background-image: url('/images/uploads/coming_soon_bg-01.svg');
-  background-size: cover;
-  background-position-x: center;
-  /* height: 100vh; */
-  font-size: 24px;
-}
-
 .teamboi {
-  @apply flex gap-x-5;
+  @apply flex gap-x-5 my-8;
 }
 
 .teamboi img {

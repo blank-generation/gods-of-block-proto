@@ -1,9 +1,11 @@
 <template>
   <!-- <div class="container my-10 pb-6 mx-0 flex justify-center flex-col">
-    <Landing />
+   
   </div> -->
   <div class="flex h-screen teamCont">
-    <div class="m-auto">
+    <Landing class="m-auto absolute landing" />
+    <div class="m-auto comingSoon">
+      <!-- <img src="/images/uploads/coming_soon_bg-01.svg" class="bgimg" alt="" /> -->
       <img src="/images/uploads/Gods_of_Block_only_text.svg" alt="" />
       <h2 class="text-center">COMING SOON</h2>
     </div>
@@ -12,7 +14,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
-// import Landing from '@/components/landing.vue';
+import Landing from '@/components/landing.vue';
 // import settings from '@/content/settings/general.json';
 
 @Component({
@@ -21,7 +23,7 @@ import { Component, Vue } from 'nuxt-property-decorator';
     return 'slide-left';
   },
   components: {
-    // Landing,
+    Landing,
   },
 })
 export default class Home extends Vue {
@@ -39,4 +41,29 @@ export default class Home extends Vue {
 }
 </script>
 
-<style></style>
+<style>
+.teamCont {
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('/images/uploads/coming_soon_bg-01.svg'); */
+  background-size: cover;
+  background-position-x: center;
+  /* height: 100vh; */
+  font-size: 24px;
+}
+
+.landing {
+  z-index: 0;
+}
+
+.comingSoon {
+  opacity: 0.9;
+}
+/* .bgimg {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+} */
+/* .comingSoon img {
+  opacity: 0.2;
+} */
+</style>

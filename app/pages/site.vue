@@ -2381,7 +2381,7 @@ export default class Site extends Vue {
 
 @media (max-width: 800px) {
   .sec svg {
-    max-height: 100%;
+    max-height: 300px;
     max-width: 100%;
   }
 }

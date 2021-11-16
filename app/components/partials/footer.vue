@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer -mx-4 md:mx-0"></footer>
+  <footer class="footer"><img src="images/uploads/Site_footer.svg" alt="" /></footer>
 </template>
 
 <script lang="ts">

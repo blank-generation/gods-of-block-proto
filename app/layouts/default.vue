@@ -4,7 +4,7 @@
       <site-header v-if="this.$router.currentRoute.path != '/'" />
       <nuxt class="nuxt" />
     </div>
-    <site-footer class="my-20" />
+    <site-footer class="mt-20" />
   </main>
 </template>
 

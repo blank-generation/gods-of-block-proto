@@ -1,6 +1,6 @@
 <template>
   <section class="landing">
-    <div class="container mx-auto my-10 pb-6 flex justify-center flex-col">
+    <div class="container mx-auto mt-10 flex justify-center flex-col">
       <div class="flex flex-row justify-around md:space-x-20 pt-5 linkCont">
         <!-- MOON -->
 
@@ -47,7 +47,7 @@
           </g>
         </svg> -->
 
-        <NuxtLink to="/world" class="landingLink">
+        <a href="/world" class="landingLink">
           <div>
             <svg
               id="b9857939-bd71-47d9-8467-193444a10550"
@@ -126,7 +126,7 @@
           <div class="text-center underline">
             <span class="hidden md:inline"> GO TO </span> WORLD
           </div>
-        </NuxtLink>
+        </a>
 
         <NuxtLink to="/site" class="landingLink">
           <div>

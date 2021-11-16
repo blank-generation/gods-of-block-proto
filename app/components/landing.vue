@@ -7,7 +7,8 @@ import { Component, Vue } from 'nuxt-property-decorator';
 import * as THREE from 'three';
 import { Scene, Camera, WebGLRenderer } from 'three';
 // eslint-disable-next-line import/extensions
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+// import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 @Component
@@ -56,21 +57,29 @@ export default class Landing extends Vue {
     this.bgcam = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
     this.renderer = new THREE.WebGLRenderer();
-    this.renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.8);
+    this.renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.9);
     this.renderer.antialias = true;
+    // const canvas = this.renderer.domElement;
+    // const width = canvas.clientWidth;
+    // const height = canvas.clientHeight;
+
+    // const needResize = canvas.width !== width || canvas.height !== height;
+    // if (needResize) {
+    //   this.renderer.setSize(width, height);
+    // }
     const cont = document.getElementById('3dSec');
-    const loader = new GLTFLoader();
-    loader.load(
-      '/models/blockGodSet1.glb',
-      (gltf): void => {
-        gltf.scene.position.set(-1.4, -1, 0);
-        this.scene.add(gltf.scene);
-      },
-      undefined,
-      (error): void => {
-        console.error(error);
-      }
-    );
+    // const loader = new GLTFLoader();
+    // loader.load(
+    //   '/models/blockGodSet1.glb',
+    //   (gltf): void => {
+    //     gltf.scene.position.set(-1.4, -1, 0);
+    //     this.scene.add(gltf.scene);
+    //   },
+    //   undefined,
+    //   (error): void => {
+    //     console.error(error);
+    //   }
+    // );
     if (cont != null) {
       cont.append(this.renderer.domElement);
     }
@@ -167,6 +176,38 @@ export default class Landing extends Vue {
 
       fragmentShader: fsh,
     });
+    // const svgloader = new SVGLoader();
+
+    // load a SVG resource
+    // svgloader.load(
+    //   // resource URL
+    //   'images/uploads/coming_soon_bg-01.svg',
+    //   // called when the resource is loaded
+    //   (data) => {
+    //     const { paths } = data;
+    //     const group = new THREE.Group();
+
+    //     for (let i = 0; i < paths.length; i += 1) {
+    //       const path = paths[i];
+
+    //       const material = new THREE.MeshBasicMaterial({
+    //         color: path.color,
+    //         side: THREE.DoubleSide,
+    //         depthWrite: false,
+    //       });
+
+    //       const shapes = SVGLoader.createShapes(path);
+
+    //       for (let j = 0; j < shapes.length; j += 1) {
+    //         const shape = shapes[j];
+    //         const geometry = new THREE.ShapeGeometry(shape);
+    //         const mesh = new THREE.Mesh(geometry, material);
+    //         group.add(mesh);
+    //       }
+    //       this.bgscene.add(group);
+    //     }
+    //   }
+    // );
     this.sky = new THREE.PlaneGeometry(30, 30);
     this.skymesh = new THREE.Mesh(this.sky, this.shmat);
     this.sky.dispose();

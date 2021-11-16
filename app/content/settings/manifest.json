@@ -1,8 +1,8 @@
 {
-  "name": "Bluise",
-  "shortName": "Bluise",
-  "description": "A Nuxt.js & Netlify CMS boilerplate.",
-  "themeColor": "#0b3765",
-  "backgroundColor": "#ffffff",
+  "name": "Gods of Block",
+  "shortName": "GOB",
+  "description": "A limited collection where the NFT is a membership and governance token to the Gods of Block Artverse, a play-to-earn project that gamifies the building of communities to support artists and collectors.",
+  "themeColor": "#FDB515",
+  "backgroundColor": "#000000",
   "lang": "en"
 }
