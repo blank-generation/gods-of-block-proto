@@ -2354,7 +2354,7 @@ export default class Site extends Vue {
   }
 
   mounted(): void {
-    this.animateOnScroll();
+    // this.animateOnScroll();
   }
 }
 </script>
