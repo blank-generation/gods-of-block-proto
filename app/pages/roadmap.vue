@@ -146,7 +146,7 @@
   transform: scale(6);
   background: url('/images/uploads/roadmap_bllock-01.svg');
   margin-top: 10px;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .timeline-content {
