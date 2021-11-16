@@ -257,6 +257,7 @@ export default class Header extends Vue {
     display: block;
     width: 100%;
     background-color: rgba(1, 1, 1, 0.85);
+    z-index: 100;
     backdrop-filter: blur(10px);
     height: 0px;
     transition: all 0.3s ease-in;

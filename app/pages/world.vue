@@ -3,8 +3,8 @@
    
   </div> -->
   <div class="flex h-screen teamCont">
-    <Landing class="m-auto absolute landing" />
-    <div class="m-auto comingSoon">
+    <div class="w-full"><Landing class="m-auto landing" /></div>
+    <div class="m-auto comingSoon absolute">
       <!-- <img src="/images/uploads/coming_soon_bg-01.svg" class="bgimg" alt="" /> -->
       <img src="/images/uploads/Gods_of_Block_only_text.svg" alt="" />
       <h2 class="text-center">COMING SOON</h2>
@@ -52,11 +52,13 @@ export default class Home extends Vue {
 }
 
 .landing {
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .comingSoon {
   opacity: 0.9;
+  top: 50%;
+  left: 45%;
 }
 /* .bgimg {
   position: absolute;

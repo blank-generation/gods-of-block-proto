@@ -288,6 +288,8 @@
                   <circle class="st11" cx="345.3" cy="547.9" r="6" />
                 </g>
               </g>
+              <img src="/images/uploads/About-1.png" alt="">
+             <!-- eslint-disable-next-line prettier/prettier -->
             </svg>
           </div>
           <div v-html="$md.render(welcomeText)" class="home__welcome markdown lg:w-1/2" />
@@ -646,6 +648,8 @@
                   <line class="st2" x1="359" y1="47" x2="359" y2="50.3" />
                 </g>
               </g>
+              <img src="/images/uploads/About-2.png" alt="">
+             <!-- eslint-disable-next-line prettier/prettier -->
             </svg>
           </div>
           <div v-html="$md.render(para2)" class="home__welcome markdown lg:w-1/2" />
@@ -1347,6 +1351,8 @@
                   <line class="st14" x1="77.3" y1="646.8" x2="48.5" y2="675.3" />
                 </g>
               </g>
+              <img src="/images/uploads/About-3.png" alt="">
+             <!-- eslint-disable-next-line prettier/prettier -->
             </svg>
           </div>
           <div v-html="$md.render(para3)" class="home__welcome markdown lg:w-1/2" />
@@ -2241,6 +2247,8 @@
                 d="M316.35,297.62a3.79,3.79,0,0,0,7.58,0"
                 style="fill: #333; stroke: #fff; stroke-miterlimit: 10"
               />
+              <img src="/images/uploads/About-1.png" alt="">
+             <!-- eslint-disable-next-line prettier/prettier -->
             </svg>
           </div>
           <div v-html="$md.render(para4)" class="home__welcome markdown lg:w-1/2" />
@@ -2354,7 +2362,7 @@ export default class Site extends Vue {
   }
 
   mounted(): void {
-    // this.animateOnScroll();
+    this.animateOnScroll();
   }
 }
 </script>
@@ -2374,15 +2382,15 @@ export default class Site extends Vue {
   /* width: 120vw; */
 }
 
-/* .sec svg {
+.sec svg {
   max-width: 60%;
-} */
+}
 
 @media (max-width: 800px) {
-  /* .sec svg {
+  .sec svg {
     max-height: 300px;
     max-width: 100%;
-  } */
+  }
 }
 .markdown {
   /* text-align: justify; */
