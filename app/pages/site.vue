@@ -38,6 +38,8 @@
               viewBox="0 0 694.1 768"
               style="enable-background: new 0 0 694.1 768"
               xml:space="preserve"
+              width="100%"
+              height="100%"
             >
               <style type="text/css">
                 .st0 {
