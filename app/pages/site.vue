@@ -2382,6 +2382,7 @@ export default class Site extends Vue {
   .sec svg {
     max-height: 300px;
     max-width: 100%;
+    width: auto;
   }
 }
 .markdown {
