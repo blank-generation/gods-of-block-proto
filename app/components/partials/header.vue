@@ -60,19 +60,27 @@
           <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
         </li> -->
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-          <nuxt-link to="/site"> About Us </nuxt-link>
+          <nuxt-link to="/site" @click.native="menuClicked" @keydown="menuClicked">
+            About Us
+          </nuxt-link>
         </li>
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-          <nuxt-link to="/team"> Team </nuxt-link>
+          <nuxt-link to="/team" @click.native="menuClicked" @keydown="menuClicked">
+            Team
+          </nuxt-link>
         </li>
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-          <nuxt-link to="/gallery"> Gallery </nuxt-link>
+          <nuxt-link to="/gallery" @click.native="menuClicked" @keydown="menuClicked">
+            Gallery
+          </nuxt-link>
         </li>
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-          <nuxt-link to="/roadmap"> RoadMap </nuxt-link>
+          <nuxt-link to="/roadmap" @click.native="menuClicked" @keydown="menuClicked">
+            RoadMap
+          </nuxt-link>
         </li>
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4" id="discordBtn">
-          <a href="https://discord.gg/FRnchPtbgP">
+          <a href="https://discord.gg/FRnchPtbgP" target="_blank">
             <svg
               id="discordIcon"
               data-name="Layer 1"
@@ -85,7 +93,7 @@
           ></a>
         </li>
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4" id="twitterBtn">
-          <a href="https://twitter.com/godsofblock"
+          <a href="https://twitter.com/godsofblock" target="_blank"
             ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
               <g style="isolation: isolate">
                 <g id="b7942413-219f-469b-89ee-4d4b28af2835" data-name="Layer 1">
@@ -134,6 +142,13 @@ export default class Header extends Vue {
   logo = settings.logo;
 
   isNavOpen = false;
+
+  menuClicked(): void {
+    const menuBtn = document.getElementById('nav-check');
+    if (menuBtn) {
+      menuBtn.click();
+    }
+  }
 }
 </script>
 
@@ -241,7 +256,7 @@ export default class Header extends Vue {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: rgba(1, 1, 1, 0.3);
+    background-color: rgba(1, 1, 1, 0.85);
     backdrop-filter: blur(10px);
     height: 0px;
     transition: all 0.3s ease-in;
@@ -281,179 +296,4 @@ export default class Header extends Vue {
 #twitterBtn a svg {
   width: 32px;
 }
-</style>
-
-<style lang="css">
-/* .header-fixed {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: rgba(21, 21, 21, 1);
-  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  line-height: 60px;
-}
-
-.navbar .logo {
-  flex: 3;
-}
-
-.navbar .logo a {
-  display: block;
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-}
-.navbar .logo a:hover {
-  color: #777777;
-}
-
-.navbar nav {
-  flex: 8;
-}
-
-.navbar label {
-  user-select: none;
-  cursor: pointer;
-  padding: 28px 20px;
-  position: relative;
-  z-index: 3;
-}
-
-.navbar label i {
-  height: 2px;
-  position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
-  font-style: normal;
-  font-weight: normal;
-}
-.navbar label i:before,
-.navbar label i:after {
-  content: '';
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-.navbar label i,
-.navbar label i:before,
-.navbar label i:after {
-  display: block;
-  background: #eee;
-}
-.navbar label i:before {
-  top: 5px;
-}
-.navbar label i:after {
-  top: -5px;
-}
-
-.navbar #navbar-toggle {
-  display: none;
-}
-
-.header #navbar-toggle:checked ~ .menu {
-  visibility: visible;
-  opacity: 0.99;
-}
-.header #navbar-toggle:checked ~ label {
-  background: #212121;
-  border-radius: 50%;
-}
-.header #navbar-toggle:checked ~ label i {
-  background: transparent;
-}
-.header #navbar-toggle:checked ~ label i:before {
-  transform: rotate(-45deg);
-}
-.header #navbar-toggle:checked ~ label i:after {
-  transform: rotate(45deg);
-}
-.header #navbar-toggle:checked ~ label:not(.steps) i:before,
-.header #navbar-toggle:checked ~ label:not(.steps) i:after {
-  top: 0;
-}
-
-@media (max-width: 768px) {
-  .navbar nav {
-    visibility: hidden;
-    opacity: 0;
-    z-index: 2;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease-out;
-    display: table;
-    background: #ddd;
-  }
-  .navbar nav ul {
-    margin: 0;
-    padding: 20px 0;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .navbar nav li {
-    display: block;
-    text-align: center;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 50px;
-    min-height: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-  }
-  .navbar nav li:hover {
-    background: #212121;
-  }
-  .navbar nav li:hover a {
-    color: #fff;
-    transition: all 0.3s ease-out;
-  }
-  .navbar nav li a {
-    color: #212121;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    list-style: none;
-  }
-  .navbar nav li {
-    flex: 1;
-  }
-  .navbar nav li a {
-    display: block;
-    padding: 0 8px;
-    font-size: 16px;
-    line-height: 60px;
-    color: #fff;
-    text-decoration: none;
-  }
-  .navbar nav li.active {
-    background: #555;
-  }
-  .navbar nav li:hover {
-    background: #333;
-  }
-  .navbar label {
-    display: none;
-  }
-} */
 </style>

@@ -2374,16 +2374,15 @@ export default class Site extends Vue {
   /* width: 120vw; */
 }
 
-.sec svg {
-  /* max-width: 35vw; */
+/* .sec svg {
   max-width: 60%;
-}
+} */
 
 @media (max-width: 800px) {
-  .sec svg {
+  /* .sec svg {
     max-height: 300px;
     max-width: 100%;
-  }
+  } */
 }
 .markdown {
   /* text-align: justify; */
