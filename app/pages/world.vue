@@ -2,13 +2,15 @@
   <!-- <div class="container my-10 pb-6 mx-0 flex justify-center flex-col">
    
   </div> -->
-  <div class="flex h-screen teamCont">
-    <div class="w-full"><Landing class="m-auto landing" /></div>
-    <div class="m-auto comingSoon absolute">
-      <!-- <img src="/images/uploads/coming_soon_bg-01.svg" class="bgimg" alt="" /> -->
-      <img src="/images/uploads/Gods_of_Block_only_text.svg" alt="" />
-      <h2 class="text-center">COMING SOON</h2>
+  <div class="teamCont">
+    <div class="m-auto relative">
+      <div class="absolute comingSoon">
+        <!-- <img src="/images/uploads/coming_soon_bg-01.svg" class="bgimg" alt="" /> -->
+        <img src="/images/uploads/Gods_of_Block_only_text.svg" alt="" />
+        <h2 class="text-center">COMING SOON</h2>
+      </div>
     </div>
+    <div class="w-full"><Landing class="m-auto landing" /></div>
   </div>
 </template>
 
@@ -57,8 +59,12 @@ export default class Home extends Vue {
 
 .comingSoon {
   opacity: 0.9;
-  left: 40%;
+  position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, 80%);
+  /* left: 35vw;
+  top: 50vh; */
 }
 /* .bgimg {
   position: absolute;

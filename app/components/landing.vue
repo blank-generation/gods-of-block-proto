@@ -1,5 +1,5 @@
 <template>
-  <div id="3dSec"></div>
+  <canvas id="worldCanvas"></canvas>
 </template>
 
 <script lang="ts">
@@ -48,26 +48,13 @@ export default class Landing extends Vue {
   public init(): void {
     this.scene = new THREE.Scene();
     this.bgscene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
-    this.bgcam = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-    this.renderer = new THREE.WebGLRenderer();
-    this.renderer.setSize(window.innerWidth * 0.9, window.innerHeight * 0.9);
+    this.camera = new THREE.PerspectiveCamera(75, 2, 0.1, 1000);
+    this.bgcam = new THREE.PerspectiveCamera(75, 2, 0.1, 1000);
+    const canvas = document.querySelector('#worldCanvas');
+    this.renderer = new THREE.WebGLRenderer({ canvas });
+    // this.renderer.setSize(window.innerWidth * 0.9, window.innerHeight * 0.9);
     this.renderer.antialias = true;
-    // const canvas = this.renderer.domElement;
-    // const width = canvas.clientWidth;
-    // const height = canvas.clientHeight;
-
-    // const needResize = canvas.width !== width || canvas.height !== height;
-    // if (needResize) {
-    //   this.renderer.setSize(width, height);
-    // }
-    const cont = document.getElementById('3dSec');
+    // const cont = document.getElementById('3dSec');
     // const loader = new GLTFLoader();
     // loader.load(
     //   '/models/blockGodSet1.glb',
@@ -80,9 +67,9 @@ export default class Landing extends Vue {
     //     console.error(error);
     //   }
     // );
-    if (cont != null) {
-      cont.append(this.renderer.domElement);
-    }
+    // if (cont != null) {
+    //   cont.append(this.renderer.domElement);
+    // }
     const vsh = `precision highp float;
               varying vec2 vUv;
               varying vec3 vNormal;
@@ -221,12 +208,30 @@ export default class Landing extends Vue {
 
   animate(): void {
     requestAnimationFrame(this.animate);
+    if (this.resizeRendererToDisplaySize()) {
+      const canvas = this.renderer.domElement;
+      this.camera.aspect = canvas.clientWidth / canvas.clientHeight;
+      this.bgcam.aspect = canvas.clientWidth / canvas.clientHeight;
+      this.bgcam.updateProjectionMatrix();
+      this.camera.updateProjectionMatrix();
+    }
     this.shmat.uniforms.u_time.value += 0.1;
     this.renderer.autoClear = false;
     this.renderer.clear();
     this.renderer.render(this.bgscene, this.bgcam);
     this.renderer.render(this.scene, this.camera);
     this.sceneLoaded = true;
+  }
+
+  resizeRendererToDisplaySize(): boolean {
+    const canvas = this.renderer.domElement;
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+    const needResize = canvas.width !== width || canvas.height !== height;
+    if (needResize) {
+      this.renderer.setSize(width, height, false);
+    }
+    return needResize;
   }
 
   clearScene(): void {
@@ -258,4 +263,9 @@ export default class Landing extends Vue {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+#worldCanvas {
+  width: 80vw;
+  height: 80vh;
+}
+</style>

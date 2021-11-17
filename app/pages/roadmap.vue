@@ -17,7 +17,8 @@
               helps them make sense of the “meta-vernacular” which is slowly evolving into a dialect
               or even a language of its own. By sourcing important etymological and epistemological
               information about these words we enable academic research into the linguistics of the
-              “meta-vernacular”
+              “meta-vernacular”. 100 GOB NFTs are reserved as giveaways for the highest
+              contributors.
             </p>
           </div>
         </div>
@@ -43,11 +44,9 @@
           <h2>100% GENESIS COLLECTION</h2>
           <img src="/images/uploads/100PERC-01.svg" alt="" class="svg-img pt-10" />
           <p>
-            Launch of Metawearz: Fashion in the metaverse. Community will vote on various
-            merchandise options both in terms of sales and distribution as well as design and
-            fashion quotient. The merchandise seeks to bridge the fashion gap between IRL fashion
-            and fashion in the metaverse with collections that are simultaneously available IRL and
-            also in decentraland, cryptovoxels, sandbox and other select games.
+            The Block God Generator is released and will enable the community to create their own
+            Gods. The Gods created will be voted on by the community and minted. The creator gets
+            50% of the proceeds when their God is minted and sold.
           </p>
         </div>
       </div>

@@ -846,9 +846,9 @@
       </div>
       <div class="text-center py-10 mx-auto w-3/4 landingText">
         <p>
-          A limited collection where the NFT is a membership and governance token to the Gods of
-          Block Artverse, a play-to-earn project that gamifies the building of communities to
-          support artists and collectors.
+          A limited collection where the NFT is a community ownership and governance token to the
+          Gods of Block Artverse, a play-to-earn project that gamifies the building of communities
+          to support artists and collectors.
         </p>
       </div>
     </div>
