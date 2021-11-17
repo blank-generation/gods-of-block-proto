@@ -265,7 +265,7 @@ export default class Landing extends Vue {
 
 <style lang="scss">
 #worldCanvas {
-  width: 80vw;
-  height: 80vh;
+  width: 100%;
+  height: 70vh;
 }
 </style>

@@ -10,7 +10,7 @@
         <h2 class="text-center">COMING SOON</h2>
       </div>
     </div>
-    <div class="w-full"><Landing class="m-auto landing" /></div>
+    <div class="w-full m-auto"><Landing class="landing" /></div>
   </div>
 </template>
 
@@ -50,7 +50,7 @@ export default class Home extends Vue {
   background-size: cover;
   background-position-x: center;
   /* height: 100vh; */
-  font-size: 24px;
+  font-size: 2em;
 }
 
 .landing {
@@ -62,7 +62,7 @@ export default class Home extends Vue {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 80%);
+  transform: translate(-50%, 15vh);
   /* left: 35vw;
   top: 50vh; */
 }
