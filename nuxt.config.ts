@@ -142,7 +142,7 @@ const nuxtConfig: Configuration = {
         ignoreNotFoundWarnings: true,
       },
     ],
-    '@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     'nuxt-gsap-module',
   ],

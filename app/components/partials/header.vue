@@ -75,9 +75,16 @@
           </nuxt-link>
         </li>
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-          <nuxt-link to="/roadmap" @click.native="menuClicked" @keydown="menuClicked">
+          <!-- <nuxt-link to="/roadmap" @click.native="menuClicked" @keydown="menuClicked">
             RoadMap
-          </nuxt-link>
+          </nuxt-link> -->
+          <a
+            href="https://drive.google.com/file/d/1eyU98ivwsIsGemiHeoj6tOh4yrtujJHY/preview" 
+            class="bpbtn"
+            target="_blank"
+          >
+            Blueprint
+          </a>
         </li>
         <li class="block font-medium px-4 py-1 md:p-2 lg:px-4" id="discordBtn">
           <a href="https://discord.gg/FRnchPtbgP" target="_blank">
@@ -153,6 +160,12 @@ export default class Header extends Vue {
 </script>
 
 <style lang="scss">
+.bpbtn {
+  padding: 8px;
+  border: solid white 1px;
+  border-radius: 5px;
+}
+
 .nav {
   ul li > a {
     &.nuxt-link-active {
