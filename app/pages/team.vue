@@ -53,6 +53,14 @@
           <p>SCRIBE, <br />SHILLER-IN-CHIEF</p>
         </div>
       </div>
+      <!-- Sam -->
+      <div class="teamboi flex md:flex-row flex-col">
+        <img src="/images/uploads/sam.png" alt="" />
+        <div class="my-auto">
+          <h2>CARDAPPER</h2>
+          <p>PLUTUS PROGRAMMER, <br />BOY WONDER</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -63,7 +71,7 @@ export default {};
 
 <style>
 .teamboi {
-  @apply flex gap-x-5 my-8;
+  @apply flex gap-x-5 my-3;
 }
 
 .teamboi img {
